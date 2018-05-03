@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="300dp"
+        android:paddingRight="100dp"
+        android:layout_marginTop="200dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转换后： "
+            android:textSize="27sp"
+            />
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="等待转换..."
+            android:textColor="@color/blue"
+            android:textSize="27dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PX = "
+            android:textSize="27sp"
+            />
+        <EditText
+            android:id="@+id/px_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DP = "
+            android:textSize="27sp"
+            />
+        <EditText
+            android:id="@+id/dp_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SP = "
+            android:textSize="27sp"
+            />
+        <EditText
+            android:id="@+id/sp_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/dp_to_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/darkseaGreen"
+            android:layout_marginLeft="115dp"
+            android:text="dp转换px"
+            android:textSize="27sp"
+            />
+        <Button
+            android:id="@+id/px_to_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/darkseaGreen"
+            android:layout_marginLeft="105dp"
+            android:text="px转换dp"
+            android:textSize="27sp"
+            />
+        <Button
+            android:id="@+id/px_to_sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/darkseaGreen"
+            android:layout_marginLeft="105dp"
+            android:text="px转换sp"
+            android:textSize="27sp"
+            />
+        <Button
+            android:id="@+id/sp_to_px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/darkseaGreen"
+            android:layout_marginLeft="105dp"
+            android:text="sp转换px"
+            android:textSize="27sp"
+            />
+    </LinearLayout>
+</LinearLayout>

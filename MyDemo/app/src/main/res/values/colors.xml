@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <drawable name="clr_normal">#3333</drawable>
+    <drawable name="clr_pressed">#228B22</drawable>
+    <color name="red">#ff00</color>
+    <color name="black">#000</color>
+    <color name="grey">#303030</color>
+    <color name="grey2">#808080</color>
+    <color name="snow">#FFFAFA</color>
+    <color name="xiaomaihuang">#F5DEB3</color>
+    <color name="green">#7CFC00</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="darkseaGreen">#8FBC8F</color>
+    <color name="forestGreen">#228B22</color>
+    <color name="blue">#0078D7</color>
+</resources>

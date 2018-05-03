@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jiecheng.zhike.mydemo">
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- This is required for Picasso to work. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- The following permissions are OPTIONAL. -->
+    <!-- Used to adjust the work load depending on the type of network the device is using. -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Used to load images from the gallery content provider. -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- Used to load images for contact photos. -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 视频播放器权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/cat1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/cat1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".comm.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".comm.AddDemoActivity" />
+        <!-- draft -->
+        <activity android:name=".draft.ui.Draft.DrafListActivity" />
+        <activity android:name=".draft.ui.Draft.EditSubjectActivity" />
+        <!-- FileList -->
+        <activity android:name=".filelist.FileListActivity" />
+        <activity android:name=".filelist.TextViewActivity" />
+        <activity android:name=".filelist.MainActivity" />
+        <!-- Lesson -->
+        <activity android:name=".lesson.Activitys.MainActivity" />
+        <activity android:name=".lesson.Activitys.StudentActivity" />
+        <activity android:name=".lesson.Activitys.VideoActivity" />
+        <activity android:name=".lesson.Activitys.FragmentActivity" />
+        <activity android:name=".lesson.Activitys.NewsContentActivity" />
+        <activity android:name=".lesson.Activitys.NewsActivity" />
+        <!-- android:theme="@style/Theme.AppCompat.NoActionBar" /> 去掉原有标题 -->
+
+
+        <!-- BroadCast -->
+        <receiver
+            android:name=".broadCast.MyBroadCastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.broadcast.MY_BROADCAST" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".broadCast.AnotherBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.broadcast.MY_BROADCAST" />
+            </intent-filter>
+        </receiver>
+        <!-- 强制下线 -->
+        <receiver
+            android:name=".broadCast.ForceOfflineReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.broadcastbestpractice.FORCE_OFFLINE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".broadCast.BroadCastActivityMainActivity" />
+        <activity android:name=".timeHandler.ui.MainActivity" />
+        <activity android:name=".timeHandler.ui.TimeHandlerActivity" />
+        <activity android:name=".httpJson.ui.WebViewMainActivity" />
+        <activity android:name=".httpJson.ui.HttpJsonMainActivity" />
+        <activity android:name=".browser.BrowserMainActivity" />
+        <activity android:name=".LoveChat.LoveChatClientActivity" />
+        <activity android:name=".Screenshot.ScreenshotMainActivity" />
+        <activity android:name=".Utils.PxAndDpActivity" />
+        <activity android:name=".StockMarket.StockMainActivity" />
+        <activity android:name=".Countdown.CountdownMainActivity" />
+        <activity android:name=".photoUpload.PhotoUploadActivity" />
+        <activity android:name=".sort.SortMainActivity"></activity>
+    </application>
+
+</manifest>
