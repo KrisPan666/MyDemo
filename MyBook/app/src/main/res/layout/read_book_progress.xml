@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="312.0dip"
+    android:layout_height="215.0dip"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/prog_int"
+            android:layout_width="60.0dip"
+            android:layout_height="60dp"
+            android:layout_marginRight="5.0dip"
+            android:digits="0123456789"
+            android:height="16.0dip"
+            android:inputType="phone"
+            android:maxLength="3"
+            android:numeric="integer"
+            android:phoneNumber="true"
+            android:text="00"
+            android:textSize="20.0sp" />
+        <TextView
+            android:id="@+id/tip_dian1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textColor="#ffffffff"
+            android:textSize="18.0dip" />
+
+        <EditText
+            android:id="@+id/prog_float"
+            android:layout_width="60.0dip"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5.0dip"
+            android:height="16.0dip"
+            android:digits="0123456789"
+            android:inputType="phone"
+            android:maxLength="2"
+            android:numeric="integer"
+            android:phoneNumber="true"
+            android:text="00"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/tip_dian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textColor="#ffffffff"
+            android:textSize="18.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:secondaryProgress="100" />
+    </LinearLayout>
+
+</LinearLayout>

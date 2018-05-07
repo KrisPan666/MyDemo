@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:visibility="visible"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/webview_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--<include layout="@layout/aluate_title" />-->
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/fl_progress"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            app:indicatorColor="#4b9eff"
+            app:indicatorName="BallSpinFadeLoaderIndicator"
+            android:layout_gravity="center"
+            android:maxHeight="80dp"
+            android:maxWidth="80dp"
+            android:minHeight="80dp"
+            android:minWidth="80dp" />
+
+        <RelativeLayout
+            android:id="@+id/loadfail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_fail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_wife" />
+
+            <TextView
+                android:id="@+id/txt_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_fail"
+                android:layout_centerHorizontal="true"
+                android:text="网络不可用，请检查网络设置"
+                android:textColor="#999"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/btn_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_msg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rect_sendmsg_btn_bg"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:text="点击刷新"
+                android:textColor="#fff"
+                android:textSize="19sp" />
+        </RelativeLayout>
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/buttom_menu"/>
+    </RelativeLayout>
+</RelativeLayout>

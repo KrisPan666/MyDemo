@@ -1,0 +1,36 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<ViewFlipper
+		android:id="@+id/ViewFlipper01"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+	</ViewFlipper>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<Button
+			android:id="@+id/selectFile"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/selectFile" />
+		<!--<Button-->
+			<!--android:layout_width="wrap_content"-->
+			<!--android:layout_height="wrap_content"-->
+			<!--android:text="@string/selectFile"-->
+			<!--android:id="@+id/selectFile" />-->
+		<!--<Button-->
+			<!--android:layout_width="wrap_content"-->
+			<!--android:layout_height="wrap_content"-->
+			<!--android:text="@string/selectFile"-->
+			<!--android:id="@+id/selectFile" />-->
+		<!--<Button-->
+			<!--android:layout_width="wrap_content"-->
+			<!--android:layout_height="wrap_content"-->
+			<!--android:text="@string/selectFile"-->
+			<!--android:id="@+id/selectFile" />-->
+	</LinearLayout>
+</LinearLayout>

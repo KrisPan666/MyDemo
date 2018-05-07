@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MyBookActivity!</string>
+    <string name="app_name">爱阅</string>
+    <!-- menu -->
+    <string name="add">增加</string>
+    <string name="help">帮助</string>
+    <string name="read">阅读</string>
+    <string name="update">修改</string>
+    <string name="collect">收藏</string>
+    <string name="delete">删除</string>
+    <string name="name">书名</string>
+    <string name="author">作者</string>
+    <string name="password">密码</string>
+    <string name="intro">简介</string>
+    <string name="filePath">文件路径</string>
+    <string name="progress">进度</string>
+    <string name="lastReadTime">阅读时间</string>
+    <string name="help_info">这个学生很牛叉。。。</string>
+    <string name="selectFile">选择文件</string>
+    <string name="ok">确定</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="msg_save_success">增加成功</string>
+    <string name="msg_update_success">修改成功</string>
+    <string name="msg_delete_success">删除成功</string>
+
+
+    <string name="menu_importbook">图书导入</string>
+    <string name="menu_share">分享</string>
+    <string name="menu_feedback">意见反馈</string>
+    <string name="menu_help">帮助</string>
+    <string name="menu_checkupdate">检查更新</string>
+    <string name="menu_setting">系统设置</string>
+    <string name="menu_exit">退出</string>
+    <string name="menu_catalog">书籍目录</string>
+    <string name="menu_addbookmark">添加书签</string>
+    <string name="menu_skipto">进度跳转</string>
+    <string name="menu_nightmode">夜间模式</string>
+    <string name="menu_daymode">白天模式</string>
+    <string name="menu_bookmark">书签列表</string>
+    <string name="menu_lightness">显示设置</string>
+    <string name="menu_fontsize">文字设置</string>
+
+
+    <string name="header_hint_refresh_normal">下拉刷新</string>
+    <string name="header_hint_refresh_ready">释放刷新</string>
+    <string name="header_hint_refresh_loading">刷新中&#8230;</string>
+    <string name="header_hint_refresh_time">时间：</string>
+    <string name="footer_hint_load_normal">载入</string>
+    <string name="footer_hint_load_ready">释放载入</string>
+
+</resources>
