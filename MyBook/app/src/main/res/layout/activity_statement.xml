@@ -18,5 +18,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="25dp"
-        android:text="你好，我叫赫子渝，感谢您的使用！"/>
+        android:text="欢迎使用！"/>
 </LinearLayout>
